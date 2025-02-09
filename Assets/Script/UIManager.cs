@@ -14,6 +14,7 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
+
         currentScore.text = score.ToString();
         highScore.text = PlayerPrefs.GetInt(StoreHighScore,0).ToString();
         gameOverCanvas.enabled = false;

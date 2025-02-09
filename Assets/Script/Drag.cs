@@ -35,12 +35,9 @@ public class Drag : MonoBehaviour, IDragHandler,IBeginDragHandler, IEndDragHandl
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        if (isMove)
-        {
-            thisImage.raycastTarget = true;
-            transform.position = startPosition;
-            isMove=false;
-        }
+       
+        thisImage.raycastTarget = true;
+        transform.position = startPosition;
         
     }
 

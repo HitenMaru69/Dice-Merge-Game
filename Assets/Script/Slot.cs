@@ -34,6 +34,7 @@ public class Slot : MonoBehaviour, IDropHandler
                     {
                         eventData.pointerDrag.transform.position = transform.position;
                         drag.startPosition = transform.position;
+                        drag.isMove = false;
                         matchNumber = drag.number;
                         status = SlotStatus.Booked;
                         storeDragObject = eventData.pointerDrag.transform.gameObject;

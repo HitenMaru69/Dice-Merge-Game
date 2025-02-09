@@ -20,6 +20,7 @@ public class GridManager : MonoBehaviour
     private void Start()
     {
         isMatch = false;
+        
     }
 
     #region  To check for similar objects in the grid
